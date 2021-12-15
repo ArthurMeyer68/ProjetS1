@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,500;1,400;1,500&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Vendors */
+@import url('vendors/normalize.css');
+
+/* Variables */
+@import url('utils/variables.css');
+
+/* Base */
+@import url('base/main.css');
+@import url('base/media.css');
+@import url('base/icons.css');
+
+/* Layout */
+@import url('layout/header.css');
+
+/* Components */
+@import url('components/menu.css');
+
+@import url('layout/footer.css');
+
+@import url('components/hero.css');

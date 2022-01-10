@@ -1,0 +1,33 @@
+.textfin {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: var(--h4);
+    margin-bottom: 20px;
+    margin-top:20px;
+}
+
+.logfem {
+    margin-left: 85px;
+}
+
+.logimg {
+    margin-left: 110px;
+}
+
+.footer__list5 {
+    display: flex;
+    gap: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer__list6 {
+    display: flex;
+    gap: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+  }

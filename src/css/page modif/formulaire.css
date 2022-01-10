@@ -1,0 +1,35 @@
+.textform {
+    font-size: 18px;
+    color: black;
+  }
+  
+  .miform {
+    margin-top: 20px;
+    display: block;
+    background-color: var(--rose-site);
+  }
+
+  .span-mots-cles2{
+    background-color: var(--footer-couleur);
+    padding: 2px;
+    border-radius: 3px;
+} 
+
+.formulaire {
+    margin-left: 20px;
+}
+
+.textform5 {
+        font-size: 22px;
+        color: black;
+        margin-left: 140px;
+        display: block;
+        margin-bottom: 30px; 
+        background-color: var(--rose-site);
+}
+
+.Cap {
+    width: 200px;
+	height: 75px;
+    margin-left: 80px;
+}

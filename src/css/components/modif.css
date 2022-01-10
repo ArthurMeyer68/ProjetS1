@@ -1,0 +1,58 @@
+.texte_intro {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    transform: translate(-15%, -60%);
+    text-align: left;
+  }
+
+  .texte_intro2 {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    transform: translate(-15%, 90%);
+    text-align: left;
+  }
+
+  .hero__superposition {
+    position: relative;
+    text-align: center;
+  }
+
+.rondrose {
+    top: 25%;
+    left: 25%;
+    transform: translate(0%, 0%);
+}
+
+.pointsroses {
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.fleche {
+    margin-right: 20px;
+    margin-left: 170px;
+    margin-bottom: 30px;
+}
+
+.imgaccueil {
+    margin-right: 40px;
+    margin-left: 90px;
+    margin-bottom: 20px;
+}
+
+.titreaccueil {
+    text-align: center;
+}
+
+.daccueil {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.texteintro {
+    font-weight: bold;
+}

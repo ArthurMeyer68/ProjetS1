@@ -1,0 +1,24 @@
+:root{
+/* Color styles */
+--rose-site: rgba(255, 237, 237, 1);
+--fond-site: rgba(252, 252, 252, 1);
+--footer-couleur: rgba(196, 196, 196, 1);
+--violet-site: rgba(232, 202, 217, 1);
+
+/* Text-size styles */
+/* base size: police-femisimply (18px) */
+--police-femisimply: 1rem;
+--h1: 1.83rem;
+--h2: 1.33rem;
+--h3: 1rem;
+--h4: 0.78rem;
+
+  /* Espaces */
+  --space1x: 8px;
+  --space2x: 16px;
+  --space3x: 24px;
+  --space4x: 48px;
+  --space5x: 80px;
+
+  --font-family: 'Mulish', sans-serif;
+}

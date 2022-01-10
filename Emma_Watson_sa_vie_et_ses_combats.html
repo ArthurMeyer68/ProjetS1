@@ -1,52 +1,72 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Emma Watson : sa vie et ses combats</title>
+        <title>Femisimply</title>
+        <link rel="stylesheet" href="src/css/style.css">
+        <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
     </head>
-    <body>
 
-        <header>
-            <a href="/index.html">
-                <img src="public/img/home_page/logo_femisimply.webp" alt="logo femisimply">
-            </a>
 
-                <nav class="headermenu menu">
-                    <ul class="menulist">
-                        <li class="menuitem">
-                            <a class="menulink" href="index.html">Fr</a>
-                        </li>
-                        <li class="menuitem">
-                            <a class="menulink" href="Féminisme_dans_le_football.html">Féminisme dans le football</a>
-                        </li>
-                        <li class="menuitem">
-                            <a class="menulink" href="Emma_Watson_sa_vie_et_ses_combats.html">Emma Watson : sa vie et ses combats</a>
-                        </li>
-                        <li class="menuitem">
-                            <a class="menulink" href="Féminisme_et_cinéma_I_Feel_Pretty.html">Féminisme et cinéma : I Feel Pretty</a>
-                        </li>
-                        <li class="menuitem">
-                            <a class="menulink" href="frise.html">Frise</a>
-                        </li>
-                        <li class="menuitem">
-                            <a class="menulink" href="glossaire.html">Glossaire</a>
-                        </li>
-                        <li class="menuitem">
-                            <a class="menu__link" href="galerie.html">Galerie</a>
-                        </li>
-                        <li class="menuitem">
-                            <a class="menu__link" href="contact.html">Contact</a>
-                        </li>
-                        <li class="menuitem">
-                            <a class="menu__link" href="à_propos.html">À propos</a>
-                        </li>
+    <body x-data="{ atTop: true }">
+        <header class="header" 
+                @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
+                :class="{ 'header--atTop' : !atTop }">
+
+            <div class="header__start">
+             <a href="/">
+                <img class="header__logo" src="public/img/home_page/logo_femisimply.webp" alt="logo femisimply">
+             </a>
+            </div>
+
+            <div class="header__end" x-data="{ searchIsOpen: false }">
+    
+                <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                            @pointerdown="menuIsOpen = !menuIsOpen" 
+                            :class="menuIsOpen && 'menu-btn--open'">
+                    <span class="menu-btn__bar"></span>
+                </button>
+                <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                    <ul class="menu__list list-unstyled">
+                        <li class="menu__item"><a href="index.html" class="menu__link">Accueil</a></li>
+                        <div>
+                            <img class="lignemenu" src="public/img/linge.webp" alt="linge">
+                        </div>
+                        <li class="menu__item"><a href="Féminisme_dans_le_football.html" class="menu__link">Féminisme dans le football</a></li>
+                        <div>
+                            <img class="lignemenu" src="public/img/linge.webp" alt="linge">
+                        </div>
+                        <li class="menu__item"><a href="Emma_Watson_sa_vie_et_ses_combats.html" class="menu__link">Emma Watson : sa vie et ses combats</a></li>
+                        <div>
+                            <img class="lignemenu" src="public/img/linge.webp" alt="linge">
+                        </div>
+                        <li class="menu__item"><a href="Féminisme_et_cinéma_I_Feel_Pretty.html" class="menu__link">Féminisme et cinéma : I Feel Pretty</a></li>
+                        <div>
+                            <img class="lignemenu" src="public/img/linge.webp" alt="linge">
+                        </div>
+                        <li class="menu__item"><a href="frise.html" class="menu__link">Frise</a></li>
+                        <div>
+                            <img class="lignemenu" src="public/img/linge.webp" alt="linge">
+                        </div>
+                        <li class="menu__item"><a href="glossaire.html" class="menu__link">Glossaire</a></li>
+                        <div>
+                            <img class="lignemenu" src="public/img/linge.webp" alt="linge">
+                        </div>
+                        <li class="menu__item"><a href="galerie.html" class="menu__link">Galerie</a></li>
+                        <div>
+                            <img class="lignemenu" src="public/img/linge.webp" alt="linge">
+                        </div>
+                        <li class="menu__item"><a href="contact.html" class="menu__link">Contact</a></li>
+                        <div>
+                            <img class="lignemenu" src="public/img/linge.webp" alt="linge">
+                        </div>
+                        <li class="menu__item menu__item--btn"><a href="à_propos.html" class="menu__link">À propos</a></li>
                     </ul>
                 </nav>
-
-            <img src="public/icons/icon_france.svg" alt="logo france">
-            <img src="public/icons/icon_anglais.svg" alt="logo anglais">
+          </div>
+            
         </header>
 
         <h1>Emma Watson : sa vie et ses combats</h1>
@@ -110,17 +130,25 @@
             auprès des femmes ! Son engagement lui permet d'être une des féministes les plus influentes.</p>
 
             <footer class="footer">
-                <a href="contact.html">
-                    <p class="footer">contact</p>   
-                </a>
-                <img src="public/icons/Line_3.svg" alt="Ligne vertical entre contact et à propos">
-                <a href="à_propos.html">
-                    <p class="footer">à propos</p> 
-                </a>
-                <br>
-                <p>2021</p>
-                <p>Arthur Meyer B2 - arthur.meyer02@edu.univ-fcomte.fr</p>
-                <p>Projet réalisé dans le cadre d'un exercice pédagogique au département MMI de Montbéliard</p>
+                <div class="footer__social">
+                    <ul class="footer__list list-unstyled">
+                        <li class="footpage">Contact</li>
+                        <li class="footpage"><img src="public/icons/Line_3.svg" alt="Ligne vertical entre contact et à propos"></li>
+                        <li class="footpage">À propos</li>
+                    </ul>
+    
+                    <div class="footer__social2">
+                        <ul class="footer__list2 list-unstyled">
+                            <li><a href="https://www.linkedin.com/in/arthur-meyer-401b00223/" aria-label="linkedin"><img class="footimg" src="public/icons/icon_linkedin.svg" alt="icone linkedin"></a></li>
+                            <li><a href="https://www.instagram.com/arthmyr/?hl=fr" aria-label="instagram"><img class="footimg2" src="public/icons/icon_insta.svg" alt="icone instgram"></a></li>
+                        </ul>
+                    </div>
+    
+                    <img class="lignefooter" src="public/img/Line_11.webp" alt="ligne footer">
+    
+                <p class="footerdate">2021</p>
+                <p class="footeradr">Arthur Meyer B2 - arthur.meyer02@edu.univ-fcomte.fr</p>
+                <p class="footerloi">Projet réalisé dans le cadre d'un exercice pédagogique au département MMI de Montbéliard</p>
             </footer>
-    </body>
-</html>
+        </body>
+    </html>

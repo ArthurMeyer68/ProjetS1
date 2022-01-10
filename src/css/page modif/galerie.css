@@ -1,0 +1,36 @@
+.footer__list {
+    display: flex;
+    gap: var(--space3x);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer__list3 {
+    display: flex;
+    gap: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    margin-top: -10px;
+    font-weight: bold;
+  }
+
+
+  .footer__list2 {
+    display: flex;
+    gap: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -30px;
+  }
+
+
+.rondm3 {
+        margin-right: 30px;
+        margin-top: 30px;
+        margin-left: 100px;
+        margin-bottom: 30px;
+}

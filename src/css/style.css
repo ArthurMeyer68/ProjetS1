@@ -18,4 +18,9 @@
 /* Components */
 @import url('components/menu.css');
 
-@import url('components/modif.css');
+
+
+@import url('page modif/accueil.css');
+
+@import url('page modif/article1.css');
+

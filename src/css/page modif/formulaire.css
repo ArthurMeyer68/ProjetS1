@@ -15,6 +15,12 @@
     border-radius: 3px;
 } 
 
+.span-mots-cles5{
+  background-color: var(--rose-site);
+  padding: 2px;
+  border-radius: 3px;
+} 
+
 .formulaire {
     margin-left: 20px;
 }

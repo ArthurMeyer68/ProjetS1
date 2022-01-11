@@ -13,3 +13,8 @@ figure {
     font-size: var(--police-femisimply);
     color: white;
   }
+
+  video {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }

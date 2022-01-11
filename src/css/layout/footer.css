@@ -95,3 +95,16 @@
 	height: 60px;
     color: black;
 }
+
+.footer__list11 {
+    display: flex;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.centrefoimg {
+    margin-left: 150px;
+}

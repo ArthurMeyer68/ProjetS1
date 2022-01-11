@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Femisimply</title>
+        <link rel="stylesheet" href="src/css/style.css">
+        <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    </head>
+
+
+    <body x-data="{ atTop: true }">
+        <header class="header" 
+                @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
+                :class="{ 'header--atTop' : !atTop }">
+
+            <div class="header__start">
+             <a href="/">
+                <img class="header__logo" src="public/img/home_page/logo_femisimply.webp" alt="logo femisimply">
+             </a>
+            </div>
+
+            <div class="header__end" x-data="{ searchIsOpen: false }">
+    
+                <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                            @pointerdown="menuIsOpen = !menuIsOpen" 
+                            :class="menuIsOpen && 'menu-btn--open'">
+                    <span class="menu-btn__bar"></span>
+                </button>
+                <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                    <ul class="menu__list list-unstyled">
+                        <li class="menu__item"><a href="indexanglais.html" class="menu__link">Home page</a></li>
+                        <div>
+                            <img class="lignemenu" src="public/img/linge.webp" alt="linge">
+                        </div>
+                        <li class="menu__item"><a href="Féminisme_dans_le_footballanglais.html" class="menu__link">Feminism in Football</a></li>
+                        <div>
+                            <img class="lignemenu" src="public/img/linge.webp" alt="linge">
+                        </div>
+                        <li class="menu__item"><a href="Emma_Watson_sa_vie_et_ses_combatsanglais.html" class="menu__link">Emma Watson : her life and her fights</a></li>
+                        <div>
+                            <img class="lignemenu" src="public/img/linge.webp" alt="linge">
+                        </div>
+                        <li class="menu__item"><a href="Féminisme_et_cinéma_I_Feel_Prettyanglais.html" class="menu__link">Feminism and cinema: I Feel Pretty</a></li>
+                        <div>
+                            <img class="lignemenu" src="public/img/linge.webp" alt="linge">
+                        </div>
+                        <li class="menu__item"><a href="friseanglais.html" class="menu__link">Frieze</a></li>
+                        <div>
+                            <img class="lignemenu" src="public/img/linge.webp" alt="linge">
+                        </div>
+                        <li class="menu__item"><a href="glossaireanglais.html" class="menu__link">Glossary</a></li>
+                        <div>
+                            <img class="lignemenu" src="public/img/linge.webp" alt="linge">
+                        </div>
+                        <li class="menu__item"><a href="galerieanglais.html" class="menu__link">Gallery</a></li>
+                        <div>
+                            <img class="lignemenu" src="public/img/linge.webp" alt="linge">
+                        </div>
+                        <li class="menu__item"><a href="contactanglais.html" class="menu__link">Contact</a></li>
+                        <div>
+                            <img class="lignemenu" src="public/img/linge.webp" alt="linge">
+                        </div>
+                        <li class="menu__item menu__item--btn"><a href="à_proposanglais.html" class="menu__link">About</a></li>
+                    </ul>
+                </nav>
+          </div>
+            
+        </header>
+
+        <h1>Emma Watson : her life and his fights </h1>
+        <h4>Thanks to the Harry Potter film, Emma Watson became a world star. Talented actress and beauty icon, a lot of person appreciate the British actress. In the last few years, she showed she was a commited woman and a feminist activist ! </h4>
+            <img class="imgart" src="public/img/page_articles/Page_article2_image_1.webp" alt="Emma Watson">
+            <p class="légendeart">Emma Watson</p>
+        
+        <h2>A great career</h2>
+            <h4>Emma Watson was born on April 15. 1990 in Paris. His parents are a couple of british layers who makes their job in France. In 1995, after the divorce of his parents, she returns with her mother in England. When she was 10 years old, she begins her actress careers in the first movie of Harry Potter saga : Harry Potter and the Philosopher’s Stone. It becomes suddenly famous thanks to this role. Besides that, she continues her studies. In 2014, she graduated from Brown university in English literature.</h4>
+        <br>
+        <h4>When we talk of Emma Watson, we necessarily think of his Hermione Granger character. Actually, it is this role which allowed him to be also known and which allowed him to show all his talent. In 2007, the fifth film of the franchise is released at the cinema. The actors sign a second contract. Considering the age of the actors, the press will start to be rougher and more minimalist with the performances of the three famous actors. </h4>
+            <img class="imgart" src="public/img/page_articles/Page_article2_image_2.webp" alt="Emma Watson : une icône mondiale">
+            <p class="légendeart">a world icon</p>
+        
+        <h4>However, their performances was very good and the benefits of Emma Watson was applauded. To the sixth installment, The Washington Post congratulate the performance of the actrees. The newspaper even declares that it is « her most charming performance to this day ».</h4>
+
+        <h4>In 2011, this is the end of Harry Potter. Emma Watson turns to other projects. She was plays in the movie “The beauty and the beast” (2017). This film was a big hit with about one billion of dollars in revenue.</h4>
+
+        <h2>An icon of feminism in the world</h2>
+
+        <h4>In 2014, she becomes Goodwill Ambassador for UN women. It is the beginning, for her, of her life as a feminist.  </h4>
+        
+        <h4>Ms. Foundation for Women, one american NGO, give the actress the title of “feminist personality of the year" in 2014. This award shows that Emma Watson is very engaged. Indeed, she is considered to one women spokesperson. This is a devoted activist. For example, she gave one million of dollars to « Justice and Equality » association. It’s one association that fights sexual harassment. She gives to women strength and determination values for the gender fighting.</h4>
+            <img class="imgart" src="public/img/page_articles/Page_article2_image_3.webp" alt="Emma Watson ONU">
+            <p class="légendeart">emma watson at the ONU</p>
+
+        <h4>Again in 2016, she give a speech to the United Nations on sexual assaults. Based on the violence that can take place on campuses, this speech was very publicized. It was judged by many people to be inspiring and dazzling. </h4>
+        
+        <h4>“The academic experience must show women have one intellectual value but they also have a role into the higher reaches of the social order”</h4>
+
+        <h4>She supports the student who are victims of sexual abuse with a strong words : “The academic experience must show women have one intellectual value but they also have a role into the higher reaches of the social order” or even “A university should be a place to find help. An institution that try to fighting the problem of forms of violence" She denounces inefficiency of campuses in terms of protections and in terms of women highlighted.</h4>
+            <img class="imgart" src="public/img/page_articles/Page_article2_image_4.webp" alt="Emma Watson 2021">
+            <p class="légendeart">Emma Watson today</p>
+
+        <h4>Today, her acting career is put aside but she are always at the front to promote women’s rights ! His engagement give him an very important influence in the gender fight. She is one of the most famous feminist in the world.</h4>
+
+        <footer class="footer">
+
+            <div class="footer__social">
+                <a href="Emma_Watson_sa_vie_et_ses_combats.html">
+                    <img class="centrefoimg" src="public/icons/icon_france.svg" alt="anglais">
+                </a>
+
+            <div class="footer__social">
+                <ul class="footer__list list-unstyled">
+                    <li class="footpage">Contact</li>
+                    <li class="footpage"><img src="public/icons/Line_3.svg" alt="Ligne vertical entre contact et à propos"></li>
+                    <li class="footpage">About</li>
+                </ul>
+
+                <div class="footer__social2">
+                    <ul class="footer__list4 list-unstyled">
+                        <li><a href="https://www.linkedin.com/in/arthur-meyer-401b00223/" aria-label="linkedin"><img class="footimg" src="public/icons/icon_linkedin.svg" alt="icone linkedin"></a></li>
+                        <li><a href="https://www.instagram.com/arthmyr/?hl=fr" aria-label="instagram"><img class="footimg2" src="public/icons/icon_insta.svg" alt="icone instgram"></a></li>
+                    </ul>
+                </div>
+
+                <img class="lignefooter" src="public/img/Line_11.webp" alt="ligne footer">
+
+            <p class="footerdate">2021</p>
+            <p class="footeradr">Arthur Meyer B2 - arthur.meyer02@edu.univ-fcomte.fr</p>
+            <p class="footerloi">Project realized within the framework of an educational
+                exercise in the MMi department of Montbéliard</p>
+        </footer>
+        </body>
+    </html>

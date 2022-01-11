@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Femisimply</title>
+        <link rel="stylesheet" href="src/css/style.css">
+        <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    </head>
+
+
+    <body x-data="{ atTop: true }">
+        <header class="header" 
+                @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
+                :class="{ 'header--atTop' : !atTop }">
+
+            <div class="header__start">
+             <a href="/">
+                <img class="header__logo" src="public/img/home_page/logo_femisimply.webp" alt="logo femisimply">
+             </a>
+            </div>
+
+            <div class="header__end" x-data="{ searchIsOpen: false }">
+    
+                <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                            @pointerdown="menuIsOpen = !menuIsOpen" 
+                            :class="menuIsOpen && 'menu-btn--open'">
+                    <span class="menu-btn__bar"></span>
+                </button>
+                <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                    <ul class="menu__list list-unstyled">
+                        <li class="menu__item"><a href="indexanglais.html" class="menu__link">Home page</a></li>
+                        <div>
+                            <img class="lignemenu" src="public/img/linge.webp" alt="linge">
+                        </div>
+                        <li class="menu__item"><a href="Féminisme_dans_le_footballanglais.html" class="menu__link">Feminism in Football</a></li>
+                        <div>
+                            <img class="lignemenu" src="public/img/linge.webp" alt="linge">
+                        </div>
+                        <li class="menu__item"><a href="Emma_Watson_sa_vie_et_ses_combatsanglais.html" class="menu__link">Emma Watson : her life and her fights</a></li>
+                        <div>
+                            <img class="lignemenu" src="public/img/linge.webp" alt="linge">
+                        </div>
+                        <li class="menu__item"><a href="Féminisme_et_cinéma_I_Feel_Prettyanglais.html" class="menu__link">Feminism and cinema: I Feel Pretty</a></li>
+                        <div>
+                            <img class="lignemenu" src="public/img/linge.webp" alt="linge">
+                        </div>
+                        <li class="menu__item"><a href="friseanglais.html" class="menu__link">Frieze</a></li>
+                        <div>
+                            <img class="lignemenu" src="public/img/linge.webp" alt="linge">
+                        </div>
+                        <li class="menu__item"><a href="glossaireanglais.html" class="menu__link">Glossary</a></li>
+                        <div>
+                            <img class="lignemenu" src="public/img/linge.webp" alt="linge">
+                        </div>
+                        <li class="menu__item"><a href="galerieanglais.html" class="menu__link">Gallery</a></li>
+                        <div>
+                            <img class="lignemenu" src="public/img/linge.webp" alt="linge">
+                        </div>
+                        <li class="menu__item"><a href="contactanglais.html" class="menu__link">Contact</a></li>
+                        <div>
+                            <img class="lignemenu" src="public/img/linge.webp" alt="linge">
+                        </div>
+                        <li class="menu__item menu__item--btn"><a href="à_proposanglais.html" class="menu__link">About</a></li>
+                    </ul>
+                </nav>
+          </div>
+            
+        </header>
+
+        <h1>Feminism in the football : the case of the American federation !</h1>
+            <h4>Since the 2018 World Cup, women’s football is more and more publicized. Many people rediscover this sport thanks to marketing and thanks to professionalization from players. For more than 10 years, one team is gaining attention for these performances in the field but also for these global icons. this is the American women's football team.h4>
+                <img class="imgart" src="public/img/page_articles/Page_article1_image_1.webp" alt="équipe américaine de football féminin">
+                <p class="légendeart">The American women's soccer team</p>
+            
+        <h2>Stars who are talked about !</h2>
+            <h4>The USWNT (United States women's national soccer team) are considered as one of the best team in the world. For more than 10 years, she released trophies and she has amazing ranking. The american selection is not only noticed for these performances, a few players have become media symbols!</h4>
+        <br>
+            <h4>All the workforce is good but two players stand out from the rest. Whether it be in the game or out the field, Alex Morgan and Megan Rapinoe are iconic players. Indeed, progressively, these two women collected a good visibility. Alex Morgan is the typical American icon. Perfect girl and ambassador of many brands, she perfectly represents American power. Him ease and quality of spoken make her one strong woman but especially a benchmark for women. Actually, his position allows to broken the cliché of the soccer is a boy sport.</h4>
+                <img class="imgart" src="public/img/page_articles/Page_article1_image_2.webp" alt="Megan Rapinoe et Alex Morgan">
+                <p class="légendeart">Alex Morgan and Megan Rapinoe</p>
+            
+            <h4>A completely opposite for her teammate and her captain during the world cup 2019 : Megan Rapinoe. Elected Golden Ball in 2019, she is one of the best players on the team. Off the leads, she is active in the fights she leads. Police violence, LGBT community and improved representation of women in sport are example of her fights. </h4>
+            <h4>She use her notoriety and her outspoken to put emphasis on gender inequalities. For her, the gender inequalities in sport is as important as the daily gender inequalities. After the victory of U.S. team to the world cup 2019, she refused to go to the white house given that she don’t like Donald Trump ideas. </h4>
+            
+        <h2>The legal attack on the players</h2>
+            <h4>In 2019, a case breaks out between the American federation of soccer and the players of the national team. The players denounce the wage inequalities between a men and they. We see indeed a big salary difference. For the men’s team, the USSF (The American Federation) was discharging 5,3 millions of dollars during the World Cup 2014 while the female team only received 1,7 million of dollars bonus. This situation is annoying because the men only reached the round of 16 while the women’s have win this competition.</h4>
+                <img class="imgart" src="public/img/page_articles/Page_article1_image_3.webp" alt="entrainement equipe féminine">
+                <p class="légendeart">The players at training</p>
+
+        <h4>It is the same situation for the friendly games. For 20 friendly and won matchs,  players (female) can win a maximum of 99 000 dollars. The men’s can win 263 320 dollars. The problem is that women’s have very good results while men’s have not good results. The 28 players therefore have to file a complaint.</h4>
+
+        <h4>The complaint could have been questioned because money and audience made by both teams is a big factor. Logically, the team who makes best benefices deserved more money. However, the female team does more audience. The female soccer is more popular in United States compared men soccer. This inequality is therefore clearly unjustified.</h4>
+            <img class="imgart" src="public/img/page_articles/Page_article1_image_4.webp" alt="Megan Rapinoe discours">
+            <p class="légendeart">Megan Rapinoe received by Joe Biden</p>
+
+        <h4>Unfortunately, the complaint was refused. Megan Rapinoe expressed on twitter after this decision. She has said : “We will never stop fighting for equality”. However, the american players do not intend to let it go. They will all do so that equality will one day be respected.</h4>
+        <footer class="footer">
+
+            <div class="footer__social">
+                <a href="Féminisme_dans_le_football.html">
+                    <img class="centrefoimg" src="public/icons/icon_france.svg" alt="anglais">
+                </a>
+
+            <div class="footer__social">
+                <ul class="footer__list list-unstyled">
+                    <li class="footpage">Contact</li>
+                    <li class="footpage"><img src="public/icons/Line_3.svg" alt="Ligne vertical entre contact et à propos"></li>
+                    <li class="footpage">About</li>
+                </ul>
+
+                <div class="footer__social2">
+                    <ul class="footer__list4 list-unstyled">
+                        <li><a href="https://www.linkedin.com/in/arthur-meyer-401b00223/" aria-label="linkedin"><img class="footimg" src="public/icons/icon_linkedin.svg" alt="icone linkedin"></a></li>
+                        <li><a href="https://www.instagram.com/arthmyr/?hl=fr" aria-label="instagram"><img class="footimg2" src="public/icons/icon_insta.svg" alt="icone instgram"></a></li>
+                    </ul>
+                </div>
+
+                <img class="lignefooter" src="public/img/Line_11.webp" alt="ligne footer">
+
+            <p class="footerdate">2021</p>
+            <p class="footeradr">Arthur Meyer B2 - arthur.meyer02@edu.univ-fcomte.fr</p>
+            <p class="footerloi">Project realized within the framework of an educational
+                exercise in the MMi department of Montbéliard</p>
+        </footer>
+        </body>
+    </html>

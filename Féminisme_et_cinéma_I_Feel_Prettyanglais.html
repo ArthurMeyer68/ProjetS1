@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Femisimply</title>
+        <link rel="stylesheet" href="src/css/style.css">
+        <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    </head>
+
+
+    <body x-data="{ atTop: true }">
+        <header class="header" 
+                @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
+                :class="{ 'header--atTop' : !atTop }">
+
+            <div class="header__start">
+             <a href="/">
+                <img class="header__logo" src="public/img/home_page/logo_femisimply.webp" alt="logo femisimply">
+             </a>
+            </div>
+
+            <div class="header__end" x-data="{ searchIsOpen: false }">
+    
+                <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                            @pointerdown="menuIsOpen = !menuIsOpen" 
+                            :class="menuIsOpen && 'menu-btn--open'">
+                    <span class="menu-btn__bar"></span>
+                </button>
+                <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                    <ul class="menu__list list-unstyled">
+                        <li class="menu__item"><a href="indexanglais.html" class="menu__link">Home page</a></li>
+                        <div>
+                            <img class="lignemenu" src="public/img/linge.webp" alt="linge">
+                        </div>
+                        <li class="menu__item"><a href="Féminisme_dans_le_footballanglais.html" class="menu__link">Feminism in Football</a></li>
+                        <div>
+                            <img class="lignemenu" src="public/img/linge.webp" alt="linge">
+                        </div>
+                        <li class="menu__item"><a href="Emma_Watson_sa_vie_et_ses_combatsanglais.html" class="menu__link">Emma Watson : her life and her fights</a></li>
+                        <div>
+                            <img class="lignemenu" src="public/img/linge.webp" alt="linge">
+                        </div>
+                        <li class="menu__item"><a href="Féminisme_et_cinéma_I_Feel_Prettyanglais.html" class="menu__link">Feminism and cinema: I Feel Pretty</a></li>
+                        <div>
+                            <img class="lignemenu" src="public/img/linge.webp" alt="linge">
+                        </div>
+                        <li class="menu__item"><a href="friseanglais.html" class="menu__link">Frieze</a></li>
+                        <div>
+                            <img class="lignemenu" src="public/img/linge.webp" alt="linge">
+                        </div>
+                        <li class="menu__item"><a href="glossaireanglais.html" class="menu__link">Glossary</a></li>
+                        <div>
+                            <img class="lignemenu" src="public/img/linge.webp" alt="linge">
+                        </div>
+                        <li class="menu__item"><a href="galerieanglais.html" class="menu__link">Gallery</a></li>
+                        <div>
+                            <img class="lignemenu" src="public/img/linge.webp" alt="linge">
+                        </div>
+                        <li class="menu__item"><a href="contactanglais.html" class="menu__link">Contact</a></li>
+                        <div>
+                            <img class="lignemenu" src="public/img/linge.webp" alt="linge">
+                        </div>
+                        <li class="menu__item menu__item--btn"><a href="à_proposanglais.html" class="menu__link">About</a></li>
+                    </ul>
+                </nav>
+          </div>
+            
+        </header>
+
+        <h1>Feminism and movies: I Feel Pretty</h1>
+        <h4>In 2018 was released the film “I Feel Pretty”. Available on Netflix, this movie denounces the problem of women into our society. The full-lenght movie resumes the clichés of our society to make it a message of strength. References, actresses and messages, here’s how I Feel Pretty supports the feminist struggle ! </h4>
+            <img class="imgart" src="public/img/page_articles/Page_article3_image_1.webp" alt="affiche I Feel Pretty">
+            <p class="légendeart">One of the posters of the film</p>
+        
+        <h2>A comedy with the assumed ulterior motive</h2>
+            <h4>I Feel Pretty is a american romantic comedy. In the movie, the most featured actress is Amy Schumer. At the casting, there is also Michelle Williams, Rory Scovel or Emily Ratajkowski. It is a production of 110 minutes.</h4>
+        <br>
+        <h4>The history of movie is easy. Renée Benett is a funny and nice girl. His problem is that she has not been feeling well healthy. She fantasizes on women who are considered to beautiful : no fat, beautiful makeup, advantageous body… Because of this that she is scared in his everyday life. She is scared to undertake things and she feels to be a zero. One day, she makes the desire to become « beautiful ». After a fall on the head, she completely changes. She sees herself as she would like it and she found trust to move forward in life.</h4>
+            <img class="imgart" src="public/img/page_articles/Page_article3_image_2.webp" alt="Renée Benett">
+            <p class="légendeart">Renée Benett, the main character</p>
+        
+        <h4>Many messages and many values are put forward in this movie. Effectively, many current fights are supported. He has particularly a feminism values but there are others likes the LGBT values and the « Body Positive » values for example. At one point in the movie, the protagonist is wrong on the sexuality of a men. </h4>
+
+        <h4>Thereafter, we see that the man he’s engaged with another man. When the heroine see that, she says the sentence : « I didn't know your situation and I find her beautiful". It’s logically a positive message for the LGBT values. This full-length use correctly the code of recently romantic comedy. All that to pass a healthy message.</h4>
+        
+        <h2>The major fight of the movie : feminism !</h2>
+            <h4>The production bring a positive self-confidence vision. The real message of I Feel Pretty is to be well in his body and that true beauty is more than skin deep. Inner beauty is more important than outer beauty. However, the outer beauty is just a mirror on society. Nobody is able to judge someone else with a body. He don’t have standard of beauty and everybody is beautiful as he is.</h4>
+                <img class="imgart" src="public/img/page_articles/Page_article3_image_3.webp" alt="scène du film">
+                <p class="légendeart">Renée talking with her colleagues</p>
+
+        <h4>We have some feminist references in the production to reinforce the message. First, we have the personage of Mallory. This is a very inspiring character for the main protagonist. This role is played by Emily Ratajkowski. She is a world-famous model who supports gender equality. </h4>
+                <img class="imgart" src="public/img/page_articles/Page_article3_image_4.webp" alt="Emily Ratajkowski">
+                <p class="légendeart">Emily Ratajkowski is in the movie</p>
+
+        <h4>In effect, the young girl is viewed as a “2.0 feminist”. She has a different vision of the movement. She thinks a woman can do everything and breaking out. Shows what she wants for her, to be able to wear what she wants or choose everything she does is a form of feminism according to Emily Ratajkowski. </h4>
+
+        <h4>We also have a reference to movement in the soundtrack of the film. We can hear the song “Girl on Fire” of the singer and pianist Alicia Keys. The singer is invested in the women’s right.  </h4>
+
+        <h2>A speech of confidence and inspiration</h2>
+            <h4>“I am what I am, I am me and I’m very proud of it“</h4>
+
+        <h4>At the end of the movie, the protagonist made a speech on woman and the relationship to their bodies. This speech is very inspiring, peoples who watched this film win self-confidence. Self-acceptance is very hard but, with the conference, it’s easier to finding the key of acceptation. </h4>
+
+        <h4>Here are some inspiring phrases from this speech : « I am what I am, I am me and I’m very proud of it », " If we didn't care about our appearance " or " When someone says we're not good enough, we just have to tell him that we are better than that ".</h4>
+
+        <h4>In conclusion, I Feel Pretty perfectly resumes a modern romantic comedy by positioning in feminist fight ! </h4>
+
+        <footer class="footer">
+
+            <div class="footer__social">
+                <a href="Féminisme_et_cinéma_I_Feel_Prettyanglais.html">
+                    <img class="centrefoimg" src="public/icons/icon_france.svg" alt="anglais">
+                </a>
+
+            <div class="footer__social">
+                <ul class="footer__list list-unstyled">
+                    <li class="footpage">Contact</li>
+                    <li class="footpage"><img src="public/icons/Line_3.svg" alt="Ligne vertical entre contact et à propos"></li>
+                    <li class="footpage">About</li>
+                </ul>
+
+                <div class="footer__social2">
+                    <ul class="footer__list4 list-unstyled">
+                        <li><a href="https://www.linkedin.com/in/arthur-meyer-401b00223/" aria-label="linkedin"><img class="footimg" src="public/icons/icon_linkedin.svg" alt="icone linkedin"></a></li>
+                        <li><a href="https://www.instagram.com/arthmyr/?hl=fr" aria-label="instagram"><img class="footimg2" src="public/icons/icon_insta.svg" alt="icone instgram"></a></li>
+                    </ul>
+                </div>
+
+                <img class="lignefooter" src="public/img/Line_11.webp" alt="ligne footer">
+
+            <p class="footerdate">2021</p>
+            <p class="footeradr">Arthur Meyer B2 - arthur.meyer02@edu.univ-fcomte.fr</p>
+            <p class="footerloi">Project realized within the framework of an educational
+                exercise in the MMi department of Montbéliard</p>
+        </footer>
+        </body>
+    </html>
